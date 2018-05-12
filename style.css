@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menu{
+    padding: 0 1.5em;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.menu li{
+    display: inline-block;
+}
+.menu a{
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.banner{
+    position: relative;
+}
+.intro{
+    position: absolute;
+    top: 30%;
+    left: 2.5em;
+    color: white;
+}
+.banner img{
+    width: 100%;
+    display: block;
+}
+.col{
+    width: 33.3333%;
+    float: left;
+    padding: 1em;
+}
+.col img{
+    width: 100%;
+    display: block;
+}
+.content{
+    background-color: #ccc;
+    padding: 0.5em 1.5em;
+}
+.pt{
+    padding-top: 33px;
+}
+.info{
+    padding-left: 1em;
+}
+.footer{
+    background-color: #eee;
+    padding: 0.5em 1.5em;
+}
+
+@media (max-width: 991px){
+    .menu{
+        padding-top: 1em;
+        background-color: #566A6F;
+    }
+    .menu a{
+        color: white;
+    }
+    .banner{
+        border-bottom: 1px solid #ccc;
+    }
+    .banner img{
+        visibility: hidden;
+    }
+    .intro{
+        color: black;
+    }
+    .content,
+    .footer{
+        background-color: #fff;
+    }
+    .col{
+        width: 50%;
+    }
+    .footer .col{
+        width: 100%;
+    }
+}
+@media (max-width: 767px){
+    .banner{
+        border-bottom: 0;
+    }
+    .col{
+        width: 100%;
+    }
+}
+
+/* LOGIN FORM */
+#frmLogin{
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.input-group label{
+    display: inline-block;
+    min-width: 100px;
+}
+.input-group input{
+    padding: 0.6em;
+    margin: 8px 0;
+}
+.button-group{
+    text-align: right;
+}
+#btnLogin,
+#btnCancel{
+    background-color: mediumseagreen;
+    padding: 0.6em;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+button{
+    margin: 5px;
+}
+#btnLogin:hover,
+#btnCancel:hover{
+    background-color: orange !important;
+}
